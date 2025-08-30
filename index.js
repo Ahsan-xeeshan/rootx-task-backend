@@ -24,9 +24,6 @@ app.use(cookieParser());
 
 //Connect Database
 connectDB();
-app.get("/health", (req, res) => {
-  res.json({ status: "Backend is running" });
-});
 
 app.use(routes);
 
